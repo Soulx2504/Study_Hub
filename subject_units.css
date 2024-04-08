@@ -1,0 +1,177 @@
+:root {
+    --main-color: hsl(202, 46%, 72%);
+    --primary: hsl(182, 82%, 93%);
+    --black: hsl(0, 0%, 8%);
+    --white: hsl(0, 0%, 100%);
+    --bg: hsl(0, 0%, 95%);
+    --light-black: hsl(0, 0%, 40%);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: auto;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--primary);
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.header .logo {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+
+.header .navbar {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--main-color);
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--main-color);
+    display: none;
+}
+.header .navbar ul {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute items evenly */
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.header .navbar ul li {
+    margin-right: 20px; /* Add spacing between items */
+}
+
+.header .navbar ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+/* Subject Title */
+.subject-title {
+    padding: 3rem;
+}
+
+.subject-title h2 {
+    color: var(--main-color);
+}
+
+/* Unit Cards */
+.unit-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    padding: 2rem;
+}
+
+.card h3 {
+    color: var(--main-color);
+}
+
+.card p {
+    color: var(--black);
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: var(--primary);
+}
+
+/* Navigation Options */
+.navigation-options {
+    padding: 3rem;
+}
+
+.navigation-options a {
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+
+.navigation-options a:last-child {
+    margin-right: 0;
+}
+
+/* Back Button */
+.back-button {
+    padding: 3rem;
+}
+
+.back-button a {
+    color: var(--main-color);
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 0;
+    background: var(--primary);
+    text-align: center;
+}
+
+.footer .links a {
+    color: var(--main-color);
+    margin: 0 1rem;
+}

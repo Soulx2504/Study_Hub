@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanics Quiz</title>
+    <link rel="stylesheet" href="heat_quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mechanics Quiz</h1>
+        <form id="quiz-form"></form>
+        <button id="submit-btn">Submit</button> <!-- Submit button added -->
+        <div id="quiz-feedback"></div>
+    </div>
+
+    <!-- Quiz results modal -->
+    <div id="quiz-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="quiz-results"></div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="electricity_quiz.js"></script>
+    <script>
+        // Call generateQuiz function when the page loads
+        window.addEventListener('load', generateQuiz);
+    </script>
+
+
+</body>
+</html>
