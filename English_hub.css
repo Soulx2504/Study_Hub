@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 :root {
-    --main-color: hsl(202, 46%, 72%);
-    --primary: hsl(182, 82%, 93%);
+    --main-color: hsl(0, 70%, 50%); /* Red color */
+    --primary: hsl(0, 70%, 90%); /* Light red */
     --black: hsl(0, 0%, 8%);
     --white: hsl(0, 0%, 100%);
     --bg: hsl(0, 0%, 95%);
@@ -129,6 +129,46 @@ section {
     display: none;
 }
 
+/* Unit Cards */
+.unit-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    padding: 2rem;
+}
+
+.card h3 {
+    color: var(--main-color);
+}
+
+.card p {
+    color: var(--black);
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: var(--primary);
+}
+
 /* Experiments */
 .home {
     min-height: 100vh;
@@ -205,7 +245,7 @@ section {
     margin-bottom: 1rem; /* Add space below each topic heading */
 }
 
-/* Flashcard */
+/* Flashcard Styles */
 .flashcards {
     display: grid; /* Use grid layout */
     grid-template-columns: repeat(3, 1fr); /* Create a grid with 3 columns */
@@ -214,16 +254,16 @@ section {
 }
 
 .flashcard {
-    width: 250px; 
-    height: 300px; 
+    width: 250px; /* Set flashcard width */
+    height: 300px; /* Set flashcard height */
     perspective: 1000px;
-    border-radius: 10px; 
-    background-color: var(--primary); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; /* Rounded corners */
+    background-color: var(--primary); /* Use primary color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
     cursor: pointer;
 }
 
@@ -248,38 +288,39 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 10px; 
+    border-radius: 10px; /* Rounded corners */
 }
 
 .flashcard-front {
-    background-color: var(--main-color); 
-    color: var(--white); 
-    padding: 20px; 
+    background-color: var(--main-color); /* Use main color */
+    color: var(--white); /* White text color */
+    padding: 20px; /* Add padding */
 }
 
 .flashcard-back {
-    background-color: var(--bg); 
-    color: var(--black); 
+    background-color: var(--bg); /* Use background color */
+    color: var(--black); /* Black text color */
     transform: rotateY(180deg);
-    padding: 20px; 
+    padding: 20px; /* Add padding */
 }
 
+/* Flashcard Section Heading Styles */
 h3 {
-    margin-top: 30px; 
-    font-size: 24px; 
-    color: #333; 
-    text-transform: uppercase; 
+    margin-top: 30px; /* Add space above each section heading */
+    font-size: 24px; /* Increase font size */
+    color: #333; /* Dark text color */
+    text-transform: uppercase; /* Convert text to uppercase */
 }
 
 
 .flashcard-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px;/* Add space between each flashcard group */
 }
 
 h1 {
-    margin-top: 30px; 
-    text-align: center; 
-    text-transform: uppercase; 
+    margin-top: 30px; /* Add space above the h1 heading */
+    text-align: center; /* Center align the heading */
+    text-transform: uppercase; /* Convert text to uppercase */
 }
 
 /* Question and Marking Scheme */
@@ -365,4 +406,83 @@ h1 {
 .search-container button:hover {
     background-color: var(--white);
     color: var(--main-color);
+}
+
+/* Additional Styles for Character Information */
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.select {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 0.1rem solid var(--main-color);
+    border-radius: 0.5rem;
+}
+
+.info-container {
+    margin-top: 20px;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--primary);
+    border: 0.1rem solid var(--main-color);
+    color: var(--main-color);
+}
+
+.btn:hover {
+    background: var(--main-color);
+    color: var(--white);
+}
+
+.character-info {
+    margin-top: 20px;
+    font-size: 18px;
+    display: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#infoContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#infoContainer button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: var(--main-color);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#infoContainer button:hover {
+    background-color: var(--white);
+    color: var(--main-color);
+}
+
+#characterInfo {
+    margin-top: 20px;
+    text-align: center;
 }

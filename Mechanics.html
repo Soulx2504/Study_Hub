@@ -23,11 +23,11 @@ href="https://cdn.jsdeliver.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 <nav class="navbar">
 <a href="#home">home</a>
-<a href="#about">about</a>
-<a href="#services">diet</a>
-<a href="#diet">meal ideas</a>
-<a href="#websites">webistes</a>
-<a href="#quotes">quotes</a>
+<a href="#about"></a>
+<a href="#services"></a>
+<a href="#diet"></a>
+<a href="#websites"></a>
+<a href="#quotes">  </a>
 </nav>
 
 <div class="fas fa-bars" id="menu"></div>
@@ -35,18 +35,13 @@ href="https://cdn.jsdeliver.net/npm/swiper@9/swiper-bundle.min.css"/>
 </header>
 <!--header section ends-->
 
+<!-- Search bar -->
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="search()">Search</button>
+</div>
+
 <!--home section start-->
-
-<section class="experiments" id="experiments">
-<h1></h1>
-    <div class="content">
-        <h3></h3>    
-    </div>
-
-</section>
-
-
-
 <!--home section ends-->
 
 <!--about section start-->
@@ -81,8 +76,8 @@ href="https://cdn.jsdeliver.net/npm/swiper@9/swiper-bundle.min.css"/>
 <section class="flashcards" id="flashcards">
     <h1 class="heading">Flashcards</h1>
     <div class="flashcard-container">
-        <h3>Acceleration</h3>
-        <!-- Flashcard -->
+        <div class="flashcard-group">
+            <h3>Acceleration</h3>
         <div class="flashcard" id="flashcard1">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
@@ -94,7 +89,7 @@ href="https://cdn.jsdeliver.net/npm/swiper@9/swiper-bundle.min.css"/>
             </div>
         </div>
 
-        <div class="flashcard" id="flashcard1">
+        <div class="flashcard" id="flashcard2">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
                     <h2>Scalar</h2>
@@ -104,371 +99,376 @@ href="https://cdn.jsdeliver.net/npm/swiper@9/swiper-bundle.min.css"/>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Distance</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>The overall ground covered by an object during its motion</p>
-            </div>
-        </div>
-    </div>
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Displacement</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>The separation between two points in a named direction</p>
+        <div class="flashcard" id="flashcard3">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Distance</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The overall ground covered by an object during its motion</p>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Speed</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>The distance travelled per unit time</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Velocity</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>The rate of change of displacement</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Acceleration</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>The rate of change of velocity</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Momentum</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>The product of a body’s mass and velocity</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>The Principle Of Conservation Of Momentum</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>In a closed system where no external forces act, momentum before is equal to momentum after</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Force</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>That which changes the momentum of an object</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Newton (Unit)</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>A force of 1 newton gives an acceleration of 1ms⁻² to a mass of 1kg</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Weight</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>The force at which a mass is attracted to the Earth</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Friction</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>The force that opposes motion between surfaces in contact</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Newton’s First Law</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>A body remains at rest or in constant motion unless acted on by a resultant force</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Newton’s Second Law</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>The rate of change of momentum is directly proportional to the applied force and takes place in the same direction as the applied force</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flashcard" id="flashcard1">
-        <div class="flashcard-inner">
-            <div class="flashcard-front">
-                <h2>Newton’s Third Law</h2>
-            </div>
-            <div class="flashcard-back">
-                <p>For every action, there is an equal and opposite reaction</p>
-            </div>
-        </div>
-    </div>
-</div>
 
-<h3>Circular Motion</h3>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Angular Velocity</h2>
+        <div class="flashcard" id="flashcard4">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Displacement</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The separation between two points in a named direction</p>
+                </div>
+            </div>
         </div>
-        <div class="flashcard-back">
-            <p>The angle (measured in radians) swept out per second.</p>
+
+        <div class="flashcard" id="flashcard5">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Speed</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The distance travelled per unit time</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard6">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Velocity</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The rate of change of displacement</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard7">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Acceleration</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The rate of change of velocity</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard8">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Momentum</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The product of a body’s mass and velocity</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard9">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>The Principle Of Conservation Of Momentum</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>In a closed system where no external forces act, momentum before is equal to momentum after</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard10">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Force</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>That which changes the momentum of an object</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard11">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Newton (Unit)</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>A force of 1 newton gives an acceleration of 1ms⁻² to a mass of 1kg</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard12">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Weight</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The force at which a mass is attracted to the Earth</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard13">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Friction</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The force that opposes motion between surfaces in contact</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard14">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Newton’s First Law</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>A body remains at rest or in constant motion unless acted on by a resultant force</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard15">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Newton’s Second Law</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The rate of change of momentum is directly proportional to the applied force and takes place in the same direction as the applied force</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard16">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Newton’s Third Law</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>For every action, there is an equal and opposite reaction</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="flashcard-group">
+            <h3>Circular Motion</h3>
+        <div class="flashcard" id="flashcard17">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Angular Velocity</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The angle (measured in radians) swept out per second.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard18">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Centripetal Acceleration</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The acceleration that a body which is moving in a circle has towards the centre of the circle.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard19">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Centripetal Force</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The force acting towards the centre that is needed to keep a body moving in a circle.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard20">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Periodic Time</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The time taken to complete one full revolution.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Add more flashcards for the "Circular Motion" topic if needed -->
+
+        <!-- Pressure, Gravity, and Moments -->
+        <div class="flashcard-group">
+            <h3>Pressure, Gravity and Moments</h3>
+
+        <div class="flashcard" id="flashcard21">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Torque</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Torque is the moment of force. The product of the force applied and the perpendicular distance to the fulcrum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard22">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Lever</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>A rigid body which is free to rotate about a fixed point.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard23">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>A Couple</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Two parallel and equal forces that act in opposite directions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard24">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Conditions For Static Equilibrium</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Firstly, the net force acting upon the object must be zero. Secondly, the net torque acting upon the object must also be zero.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard25">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Newton’s Law of Universal Gravitation</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The force felt between two bodies is directly proportional to the product of their masses and inversely proportional to the square of the distance between them.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard26">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Centre of Gravity</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The point of an object through which the weight of that object appears to act.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard27">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Kepler’s Third Law</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>The square of the period of a satellite is directly proportional to the cube of its radius of orbit and inversely proportional to the mass of the planet it is orbiting.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard28">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Density</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Mass per unit volume.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard29">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Pressure</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Force per unit area.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard30">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Archimedes’ Principle</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>When a body is fully or partially immersed in a fluid, it experiences an upthrust which is equivalent to the weight of the fluid displaced.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard31">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Law of Flotation</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>A floating body will displace its own weight of fluid.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" id="flashcard32">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Boyle’s Law</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>For a fixed mass of gas at a constant temperature, volume is inversely proportional to pressure.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="flashcard-group">
+            <h3>Simple Harmonic Motion</h3>
+
+        <div class="flashcard" id="flashcard33">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Hooke’s Law</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>When an object is bent, stretched or compressed by a displacement s, the restoring force F is directly proportional to the displacement, provided the elastic limit is not exceeded.</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="flashcard" id="flashcard34">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Simple Harmonic Motion</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Motion where the object’s acceleration is directly proportional to its displacement from a mean position and is always directed towards this mean position.</p>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Centripetal Acceleration</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>The acceleration that a body which is moving in a circle has towards the centre of the circle.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Centripetal Force</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>The force acting towards the centre that is needed to keep a body moving in a circle.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Periodic Time</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>The time taken to complete one full revolution.</p>
-        </div>
-    </div>
-</div>
-
-<h3>Pressure, Gravity and Moments</h3>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Torque</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>Torque is the moment of force. The product of the force applied and the perpendicular distance to the fulcrum.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Lever</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>A rigid body which is free to rotate about a fixed point.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>A Couple</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>Two parallel and equal forces that act in opposite directions.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Conditions For Static Equilibrium</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>Firstly, the net force acting upon the object must be zero. Secondly, the net torque acting upon the object must also be zero.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Newton’s Law of Universal Gravitation</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>The force felt between two bodies is directly proportional to the product of their masses and inversely proportional to the square of the distance between them.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Centre of Gravity</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>The point of an object through which the weight of that object appears to act.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Kepler’s Third Law</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>The square of the period of a satellite is directly proportional to the cube of its radius of orbit and inversely proportional to the mass of the planet it is orbiting.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Density</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>Mass per unit volume.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Pressure</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>Force per unit area.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Archimedes’ Principle</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>When a body is fully or partially immersed in a fluid, it experiences an upthrust which is equivalent to the weight of the fluid displaced.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Law of Flotation</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>A floating body will displace its own weight of fluid.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Boyle’s Law</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>For a fixed mass of gas at a constant temperature, volume is inversely proportional to pressure.</p>
-        </div>
-    </div>
-</div>
-
-<h3>Simple Harmonic Motion</h3>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Hooke’s Law</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>When an object is bent, stretched or compressed by a displacement s, the restoring force F is directly proportional to the displacement, provided the elastic limit is not exceeded.</p>
-        </div>
-    </div>
-</div>
-
-<div class="flashcard" id="flashcard1">
-    <div class="flashcard-inner">
-        <div class="flashcard-front">
-            <h2>Simple Harmonic Motion</h2>
-        </div>
-        <div class="flashcard-back">
-            <p>Motion where the object’s acceleration is directly proportional to its displacement from a mean position and is always directed towards this mean position.</p>
-        </div>
-    </div>
-</div>
-
-<h3>Speed, Displacement, Velocity</h3>
-
 </section>
-
-
 
 <!--diet section end-->
 
@@ -594,29 +594,6 @@ href="https://cdn.jsdeliver.net/npm/swiper@9/swiper-bundle.min.css"/>
     </div>
 </section>
 <!-- Exam Questions Section ends -->
-
-<!-- footer senction starts-->
-
-<section class="footer">
-
-    <div class="box-container">
-
-       <div class="box">
-        <h3>quick links</h3>
-        <a href="#home"><i class="fas fa-arrow-right"></i>home</a>
-        <a href="#about"><i class="fas fa-arrow-right"></i>about</a>
-        <a href="#services"><i class="fas fa-arrow-right"></i>services</a>
-        <a href="#diet"><i class="fas fa-arrow-right"></i>diet</a>
-        <a href="#blog"><i class="fas fa-arrow-right"></i>blog</a>
-        <a href="#reviews"><i class="fas fa-arrow-right"></i>quotes</a>
-       </div> 
-
-       <div class="credit">create by<span>145280</span> created for<span>Computer Science leaving cert project 2024</span></div>
-    </div>
-</section>
-<!-- footer senction ends-->
-
-
 
 <!--jquery cdn link-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

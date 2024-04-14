@@ -66,7 +66,7 @@ function generateQuiz() {
     });
 
     submitButton.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault(); 
 
         // Calculate time taken
         const endTime = new Date().getTime();
