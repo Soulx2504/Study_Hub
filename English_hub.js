@@ -140,3 +140,64 @@ function showGuidelines() {
         guidelinesDiv.style.display = "none";
     }
 }
+
+//Scrollbar function for units pages
+function search() {
+    console.log("Search function called");
+    var input = document.getElementById('searchInput').value.toLowerCase();
+    console.log("Input:", input);
+    var sections = document.getElementsByTagName('section');
+    console.log("Sections:", sections);
+    for (var i = 0; i < sections.length; i++) {
+        var sectionText = sections[i].textContent.toLowerCase();
+        if (sectionText.includes(input)) {
+            console.log("Input found in section:", sections[i]);
+            var textNodes = getTextNodes(sections[i]);
+            console.log("Text nodes:", textNodes);
+            var wordPosition = findWordPosition(textNodes, input);
+            console.log("Word position:", wordPosition);
+            if (wordPosition !== -1) {
+                var wordNode = textNodes[wordPosition.nodeIndex].parentNode; // Get the parent node of the text node
+                var windowHeight = window.innerHeight;
+                var wordNodeRect = wordNode.getBoundingClientRect();
+                var scrollPosition = wordNodeRect.top - (windowHeight / 2) + (wordNodeRect.height / 2); // Calculate the scroll position to center the word
+                wordNode.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll the word node into view
+                console.log("Scrolled to word position:", scrollPosition);
+                break; // Stop searching once found
+            }
+        }
+    }
+  }
+  
+  function getTextNodes(element) {
+    var textNodes = [];
+    var treeWalker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+    while (treeWalker.nextNode()) {
+        textNodes.push(treeWalker.currentNode);
+    }
+    return textNodes;
+  }
+  
+  function findWordPosition(textNodes, word) {
+    var found = false;
+    var nodeIndex = 0;
+    for (var i = 0; i < textNodes.length; i++) {
+        var node = textNodes[i];
+        var nodeText = node.nodeValue.toLowerCase();
+        var index = nodeText.indexOf(word);
+        if (index !== -1) {
+            found = true;
+            nodeIndex = i;
+            break;
+        }
+    }
+    return found ? { found: true, nodeIndex: nodeIndex } : { found: false }; // Adjusted here
+  }
+  
+  // Event listener for pressing Enter key
+  document.getElementById("searchInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        search();
+    }
+  });
