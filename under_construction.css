@@ -40,14 +40,14 @@ a:hover {
 .construction-site {
     width: 400px;
     height: 300px;
-    background-color: #6E6E6E; /* Background color (gray) */
+    background-color: #6E6E6E; 
     position: relative;
 }
 
 .digger {
     width: 80px;
     height: 40px;
-    background-color: #6E6E6E; /* Digger body color (gray) */
+    background-color: #6E6E6E; 
     position: relative;
 }
 
@@ -58,7 +58,7 @@ a:hover {
     left: 20px;
     width: 40px;
     height: 20px;
-    background-color: #FFD700; /* Digger scoop color (yellow) */
+    background-color: #FFD700; 
 }
 
 .digger .wheel {
@@ -66,7 +66,7 @@ a:hover {
     bottom: 0;
     width: 16px;
     height: 16px;
-    background-color: #000; /* Wheel color (black) */
+    background-color: #000; 
 }
 
 .digger .wheel.left {

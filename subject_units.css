@@ -75,18 +75,18 @@ body {
     display: none;
 }
 .header .navbar ul {
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Distribute items evenly */
-    list-style-type: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
+    display: flex; 
+    justify-content: space-between; 
+    list-style-type: none; 
+    padding: 0; 
 }
 
 .header .navbar ul li {
-    margin-right: 20px; /* Add spacing between items */
+    margin-right: 20px; 
 }
 
 .header .navbar ul li:last-child {
-    margin-right: 0; /* Remove margin from the last item */
+    margin-right: 0; 
 }
 /* Subject Title */
 .subject-title {
