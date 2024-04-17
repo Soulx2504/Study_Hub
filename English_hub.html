@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width-device-width, initialscale=1.0">
+<!-- font awesome cdn link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!--swiper cdn link-->
+<link 
+rel="stylesheet"
+href="https://cdn.jsdeliver.net/npm/swiper@9/swiper-bundle.min.css"/>
+<title>Hamlet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="English_hub.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">English Hub</div>
+
+    </header>
+
+    <!-- Search bar start -->
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="search()">Search</button>
+</div>
+
+    <!--experiments section start-->
+
+<section class="experiments" id="experiments">
+
+    <h1 class="heading">usefull videos</h1>
+
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/3upoX65hKl4" title="Hamlet by William Shakespeare | Themes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/ZBy205mbjok" title="Hamlet by William Shakespeare | Act 1, Scene 1 Summary &amp; Analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/Z02vmf7xsPc" title="Hamlet - Hamlet Character Analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/jtdbAPMA7lg" title="Hamlet Character Analysis - Claudius" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/XdTyiUzeM58" title="Hamlet Character Analysis - Rosencrantz and Guildenstern" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/sq3kxzfR8EI" title="William Shakespeare&#39;s &#39;Hamlet&#39; explained: characters, themes &amp; symbols | Narrator: Barbara Njau" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/1gpDgB-GJPY" title="Hamlet: Act 1, Scene 5: Hamlet Meets His Father&#39;s Ghost" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/OCBVmiVkzTM" title="Hamlet Act 1 Scene 2 Soliloquy (1996)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/nDCohlKUufs" title="Ophelia, Gertrude, and Regicide - Hamlet Part 2: Crash Course Literature 204" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/My14mZa-eq8" title="Ghosts, Murder, and More Murder - Hamlet Part 1: Crash Course Literature 203" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/PRwEQj2qZ5g" title="Hamlet on Cambio 0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="813" height="457" src="https://www.youtube.com/embed/t0CqUTmwKiM" title="Video SparkNotes: Shakespeare&#39;s Hamlet Summary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+<!--usefull videos section end-->
+
+<!--characters section starts-->
+<div class="container">
+    <h1>Select a Character</h1>
+    <select id="characterSelect">
+        <option value="hamlet">Hamlet</option>
+        <option value="claudius">Claudius</option>
+        <option value="gertrude">Gertrude</option>
+        <option value="polonius">Polonius</option>
+        <option value="ophelia">Ophelia</option>
+        <option value="laertes">Laertes</option>
+        <option value="horatio">Horatio</option>
+        <option value="rosencrantz">Rosencrantz</option>
+        <option value="guildenstern">Guildenstern</option>
+    
+    </select>
+
+    <div id="infoContainer">
+        <button id="bioBtn">Show Bio</button>
+        <button id="quotesBtn">Show Quotes</button>
+        <div id="characterInfo"></div>
+    </div>
+</div>
+<!--characters section end-->
+
+<!-- Content for displaying question type information -->
+<div>
+    <h1>Select Question Type</h1>
+    <select id="questionTypeSelect" onchange="showGuidelines()">
+        <option value="structure">Correct Answer Structure</option>
+        <option value="vocabulary">Vocabulary Usage</option>
+
+    </select>
+</div>
+
+<!-- Content for displaying question type information -->
+<div id="questionInfo" style="display:none;">
+    <!-- Essay structure guidelines -->
+    <h2>Essay Structure Guidelines:</h2>
+    <h3>Introduction:</h3>
+    <ul>
+        <li>Move from the general to the specific</li>
+        <li>Give your thesis statement in response to the question</li>
+        <li>Provide a brief outline of the ideas you will explore in the essay</li>
+        <li>Remember, if you mention it in the introduction, you MUST deal with it in the body of the essay</li>
+    </ul>
+
+    <h3>Main Body of the Essay:</h3>
+    <ul>
+        <li>Each paragraph should advance your argument</li>
+        <li>The topic sentence in each paragraph should be linked in some way to the question</li>
+        <li>Each paragraph should be linked in some way to the paragraphs which come before and after it</li>
+        <li>Use link words or phrases to connect your paragraphs where possible: however, it is not only, we can also see…</li>
+        <li>Reference and quotation should be commented on and evaluated. This does not mean explaining the quotation in your own words. You should show how the example reinforces the point you are making.</li>
+    </ul>
+
+    <h3>Conclusion:</h3>
+    <ul>
+        <li>Summarise your argument</li>
+        <li>Restate your thesis</li>
+        <li>If you have an apt quote from or about the play, this is a good time to use it. Make sure you work it into a sentence / evaluate/comment on it rather than simply throwing it down on the page</li>
+    </ul>
+</div>
+
+
+
+
+    <!-- Exam Questions Section -->
+<section class="questions" id="questions">
+    <h1 class="heading">Exam Paper Questions</h1>
+    <div class="question-container">
+        <h2>2022 Q5</h2>
+        <img class="question-image" src="https://blob-static.studyclix.ie/cms/media/pdfSelections/87d1f312-7ae1-421d-9e68-20fd864e039e.png" alt="Question">
+        <!-- Button to toggle marking scheme image -->
+        <button class="show-marking-scheme" onclick="toggleMarkingScheme()">Show Marking Scheme</button>
+        <!-- Second button to toggle marking scheme image -->
+        <button class="show-marking-scheme" onclick="toggleMarkingScheme()">Show Marking Scheme</button>
+    </div>
+    <!-- Marking Scheme Image (Initially hidden) -->
+    <div id="marking-scheme" class="marking-scheme-image">
+        <h2>Marking Scheme</h2>
+        <img src="https://blob-static.studyclix.ie/cms/media/pdfSelections/e034c238-9088-4ad2-bdf4-4bb116c62071.png" alt="Marking Scheme" id="marking-scheme-img">
+    </div>
+
+    <script src="English_hub.js"></script>
+</body>
+</html>
